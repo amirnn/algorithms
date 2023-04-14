@@ -8,11 +8,11 @@ class algorithmsRecipe(ConanFile):
     package_type = "application"
 
     # Optional metadata
-    license = "<Put the package license here>"
-    author = "<Put your name here> <And your email here>"
-    url = "<Package recipe repository url here, for issues about the package>"
-    description = "<Description of algorithms package here>"
-    topics = ("<Put some tag here>", "<here>", "<and here>")
+    license = "MIT"
+    author = "Amir Nourinia amir.nouri.nia@gmail.com"
+    url = "github.com/amirnn/algorithms"
+    description = "Algorithms Using C++"
+    topics = ("Algorithms", "C++", "Stanford")
 
     # Binary configuration
     settings = "os", "compiler", "build_type", "arch"
@@ -22,6 +22,9 @@ class algorithmsRecipe(ConanFile):
 
     def layout(self):
         cmake_layout(self)
+
+    def requirements(self):
+        self.requires("boost/[~1]")
 
     def generate(self):
         deps = CMakeDeps(self)
