@@ -21,7 +21,7 @@ class algorithmsRecipe(ConanFile):
     exports_sources = "CMakeLists.txt", "src/*"
 
     def layout(self):
-        cmake_layout(self)
+        cmake_layout(self, src_folder="..", build_folder="../build")
 
     def requirements(self):
         self.requires("boost/[~1]")
@@ -30,6 +30,7 @@ class algorithmsRecipe(ConanFile):
         deps = CMakeDeps(self)
         deps.generate()
         tc = CMakeToolchain(self)
+        tc.user_presets_path = "ConanPresets.json"
         tc.generate()
 
     def build(self):
@@ -40,7 +41,3 @@ class algorithmsRecipe(ConanFile):
     def package(self):
         cmake = CMake(self)
         cmake.install()
-
-    
-
-    

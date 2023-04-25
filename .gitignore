@@ -1,4 +1,8 @@
-.cache
+.DS_store
+
 build/*
-DS_store
-CMakeUserPresets.json
+out/*
+
+.cache
+ConanPresets.json
+compile_commands.json
