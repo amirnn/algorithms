@@ -12,20 +12,24 @@ struct Date {
   int month{0};
   int year{0};
 
-  void operator<<(std::ostream &o) const {
-    o << this->day << "." << this->month << "." << this->year;
-  }
+  friend std::ostream &operator<<(std::ostream &o, Date const &date);
 };
+
+std::ostream &operator<<(std::ostream &o, Date const &date) {
+  return (o << date.day << "." << date.month << "." << date.year);
+}
 
 struct Student {
   std::string name;
   Date birthday;
 
-  void operator<<(std::ostream &o) const {
-    o << "Name: " << this->name << "Date of Birthday: " << this->birthday
-      << std::endl;
-  }
+  friend std::ostream &operator<<(std::ostream &o, Student const &student);
 };
+
+std::ostream &operator<<(std::ostream &o, Student const &student) {
+  return (o << "Name: " << student.name
+            << "Date of Birthday: " << student.birthday);
+}
 
 template <class T> class Record {
 private:
@@ -41,10 +45,7 @@ public:
 };
 
 template <class T> std::vector<T> Record<T>::find_matches() const {
-  this->m_records | std::ranges::views::filter([](auto const &item){
-    
-  }
-                        std::filter this->m_records.filter this->m_records
+  return (this->m_records | std::views::);
 }
 
 int main() {

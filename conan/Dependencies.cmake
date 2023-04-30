@@ -1,1 +1,1 @@
-find_package(Boost REQUIRED component system)
+find_package(Boost REQUIRED COMPONENTS system)
