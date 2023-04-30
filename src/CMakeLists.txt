@@ -1,8 +1,9 @@
 # src
 
-add_subdirectory("algorithms")
+add_subdirectory("intro2algorithms")
 
-add_executable(main algorithms/Algorithms.cc main.cc)
+
+# add_executable(main algorithms/Algorithms.cc main.cc)
 
 install(TARGETS main DESTINATION "."
         RUNTIME DESTINATION bin
