@@ -1,9 +1,8 @@
 #include "boost/uuid/random_generator.hpp"
-#include <__algorithm/ranges_for_each.h>
-#include <__ranges/transform_view.h>
 #include <algorithm>
 #include <boost/uuid/uuid.hpp>
 #include <boost/uuid/uuid_generators.hpp>
+#include <boost/uuid/uuid_io.hpp>
 #include <iostream>
 #include <optional>
 #include <ostream>
@@ -46,8 +45,8 @@ public:
 };
 
 std::ostream &operator<<(std::ostream &o, Student const &student) {
-  return (o << "Name: " << student.name
-            << "Date of Birthday: " << student.birthday);
+  return (o << "ID: " << student.m_uuid << ", Name: " << student.name
+            << ", Date of Birthday: " << student.birthday);
 }
 
 template <class T> class Record {
