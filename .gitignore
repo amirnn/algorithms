@@ -1,7 +1,9 @@
 .DS_store
 
 build/*
-out/*
+cmake-build-debug/*
+conan/out/*
+venv
 
 .cache
 ConanPresets.json
