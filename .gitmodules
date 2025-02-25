@@ -1,0 +1,9 @@
+[submodule "cpp"]
+	path = cpp
+	url = https://github.com/amirnn/algorithms-cpp.git
+[submodule "java"]
+	path = java
+	url = https://github.com/amirnn/algorithms-java.git
+[submodule "kotlin"]
+	path = kotlin
+	url = https://github.com/amirnn/algorithms-kotlin
