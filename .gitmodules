@@ -7,3 +7,6 @@
 [submodule "kotlin"]
 	path = kotlin
 	url = https://github.com/amirnn/algorithms-kotlin
+[submodule "swift"]
+	path = swift
+	url = https://github.com/amirnn/algorithms-swift.git
