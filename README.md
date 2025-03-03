@@ -26,3 +26,5 @@ All implementations lay in their own respective folders under assignments.
 
 All the primary datastructures and algorithms have been implemented using four different languages and they lay inside their respective folder. (Python is in TODO state.)
 One can browse to the respective repos of these implementations for more details.
+
+Copyright 2025 by Amir Nourinia
