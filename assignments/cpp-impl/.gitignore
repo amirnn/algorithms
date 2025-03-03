@@ -1,0 +1,9 @@
+
+# platform
+.DS_Store
+
+# build
+/build/
+/out/
+/.cache/
+compile_commands.json
