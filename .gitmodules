@@ -10,6 +10,9 @@
 [submodule "swift"]
 	path = swift
 	url = https://github.com/amirnn/algorithms-swift.git
+[submodule "python"]
+	path = python
+	url = https://github.com/amirnn/algorithms-python.git
 [submodule "assignments"]
 	path = assignments
 	url = https://github.com/amirnn/algorithms-assignments.git
