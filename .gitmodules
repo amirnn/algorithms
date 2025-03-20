@@ -16,3 +16,6 @@
 [submodule "assignments"]
 	path = assignments
 	url = https://github.com/amirnn/algorithms-assignments.git
+[submodule "rust"]
+	path = rust
+	url = https://github.com/amirnn/algorithms-rust.git
